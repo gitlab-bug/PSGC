@@ -1,0 +1,6 @@
+@PSGC.Api_HostAddress = http://localhost:5254
+
+GET {{PSGC.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
