@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Version = "v1",
         Title = "PSGC Geo API",
-        Description = "Simple API Implementation for Philippine Standard Geographic Code",
+        Description = "Simple API Implementation for Philippine Standard Geographic Code based on September 2024 Data.",
         Contact = new OpenApiContact
         {
             Name = "Ulysses Peralta",

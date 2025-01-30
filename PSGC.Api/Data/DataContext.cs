@@ -3,7 +3,7 @@ using PSGC.Api.Entities;
 
 namespace PSGC.Api.Data
 {
-    public class DataContext(DbContextOptions options) : DbContext(options)
+    public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
     {
         public virtual DbSet<GeoData> GeoDatas { get; set; }
     }
