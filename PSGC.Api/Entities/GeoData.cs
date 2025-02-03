@@ -18,7 +18,7 @@ namespace PSGC.Api.Entities
         [MaxLength(3)]
         public string? ProvinceCode { get; set; }
         [MaxLength(2)]
-        public string? MunicipalityCode { get; set; }
+        public string? MunicipalCode { get; set; }
         [MaxLength(3)]
         public string? BarangayCode { get; set; }
     }

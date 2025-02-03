@@ -33,7 +33,7 @@ namespace PSGC.Api.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("MunicipalityCode")
+                    b.Property<string>("MunicipalCode")
                         .HasMaxLength(2)
                         .HasColumnType("TEXT");
 

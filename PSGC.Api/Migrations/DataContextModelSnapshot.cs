@@ -30,7 +30,7 @@ namespace PSGC.Api.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("MunicipalityCode")
+                    b.Property<string>("MunicipalCode")
                         .HasMaxLength(2)
                         .HasColumnType("TEXT");
 
@@ -57,6 +57,63 @@ namespace PSGC.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GeoDatas");
+                });
+
+            modelBuilder.Entity("PSGC.Api.Entities.Location", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("BarangayCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CityClass")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CorrespondenceCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GeographicLevel")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("IncomeClassification")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MunicipalCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OldNames")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PSGCCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Population")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProvincialCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RegionCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("psgc");
                 });
 #pragma warning restore 612, 618
         }

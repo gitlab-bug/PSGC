@@ -8,7 +8,7 @@
         public string? OldName { get; set; }
         public string? RegionCode { get; set; }
         public string? ProvinceCode { get; set; }
-        public string? MunicipalityCode { get; set; }
+        public string? MunicipalCode { get; set; }
         public string? BarangayCode { get; set; }
     }
 }

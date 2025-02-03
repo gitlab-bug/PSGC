@@ -22,7 +22,7 @@ namespace PSGC.Api.Migrations
                     OldName = table.Column<string>(type: "TEXT", maxLength: 150, nullable: true),
                     RegionCode = table.Column<string>(type: "TEXT", maxLength: 2, nullable: true),
                     ProvinceCode = table.Column<string>(type: "TEXT", maxLength: 3, nullable: true),
-                    MunicipalityCode = table.Column<string>(type: "TEXT", maxLength: 2, nullable: true),
+                    MunicipalCode = table.Column<string>(type: "TEXT", maxLength: 2, nullable: true),
                     BarangayCode = table.Column<string>(type: "TEXT", maxLength: 3, nullable: true)
                 },
                 constraints: table =>
